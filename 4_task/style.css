@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  font-family: "Noto Serif", serif;
+  color: white;
+  padding: 10px;
+}
+
+header {
+  background-color: #333;
+  color: darkviolet;
+  padding: 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  background-color: teal;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+h1 {
+  padding: 15px;
+}
+
+img {
+  float: left;
+  margin-right: 40px;
+}
+
+table {
+  background-color: white;
+  color: #333;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+tr {
+  border-bottom: 4px solid grey;
+  padding: 5px;
+}
+
+td {
+  padding: 5px 15px;
+}
+
+#boxes {
+  background-color: grey;
+  background-image: url("https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.box {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: #151c23;
+  border: 4px solid rgb(135, 228, 228);
+}
+
+.box2 {
+  background-color: #b9b9b9;
+  border: 5px dotted teal;
+}
+
+.box3 {
+  background-color: #333;
+  border-top: 10px dashed rgb(184, 163, 184);
+  border-left: 10px dashed rgb(116, 81, 116);
+  border-right: 10px solid rgb(109, 88, 109);
+  border-bottom: 10px dotted rgb(107, 21, 107);
+}
+
+.box4 {
+  background-color: #455352;
+  border: 35px double black;
+}
+
+.box5 {
+  background-color: #7c7c7c;
+  border: 10px solid rgb(27, 100, 97);
+  border-radius: 50%;
+}

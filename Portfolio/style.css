@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e4e3e3;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin: 0px;
+}
+
+h1,
+h2 {
+  margin-bottom: 30px;
+}
+
+/*Container for Past and future part*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba (255, 255, 255, 0.9);
+  /*0.95 = opacity*/
+  padding: 25px;
+  border-radius: 1%;
+  background-color: #f5f3f1;
+}
+
+/*Header area*/
+
+header {
+  color: #333;
+  padding: 10px;
+  text-align: right;
+}
+
+header #logo a {
+  float: left;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: teal;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/*Main navigation*/
+
+nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+header nav ul li a {
+  color: teal;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  background-color: #1abc9c;
+}
+
+/*Hero banner*/
+
+main #hero-banner {
+  scroll-behavior: smooth;
+}
+
+main #hero {
+  /* flexbox stuff*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1471898554234-bcbfedd35134?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60')
+    no-repeat fixed center center / cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+}
+
+main #hero h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #204051;
+  padding: 20px;
+}
+
+#hero .Vilma {
+  color: teal;
+}
+
+/*Past and Future*/
+
+main #past,
+main #future {
+  background-color: #c5cdd9;
+  color: #204051;
+  padding: 50px;
+  width: 100%;
+}
+
+main #past p,
+main #future p {
+  line-height: 1.5;
+}
+
+main #past img,
+main #future img {
+  height: 250px;
+  width: 350px;
+  border-radius: 5%;
+  /*miksi tämä ei toimi?*/
+  float: left;
+  margin-right: 20px;
+  padding: 10px 20px;
+}
+
+/*Present*/
+
+main #present img {
+  float: left;
+  width: 50%;
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+
+main #present .content {
+  padding: 50px;
+  line-height: 1.5;
+}
+
+main #present {
+  color: #204051;
+  padding-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*Future*/
+
+main #future {
+  clear: both;
+  /*will separate previous section that has 'float'*/
+  background: url('https://images.unsplash.com/photo-1485431618850-e6592fd4b298?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
+    no-repeat fixed center center/cover;
+}
+main #future a {
+  text-decoration: none;
+  color: #204051;
+}
+/*Footer*/
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+
+p {
+  padding: 10px 0px;
+}
+
+img {
+  float: left;
+}

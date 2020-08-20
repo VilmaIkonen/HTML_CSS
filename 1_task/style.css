@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {color: white;}
+
+#my_id{
+    color: darkblue;
+}
+.my_class {
+    color: green;
+}
