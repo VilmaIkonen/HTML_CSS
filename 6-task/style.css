@@ -3,37 +3,82 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html {
+
+.container {
+  width: 230px;
+  height: 420px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 50px 100px 10px 100px;
+  border-radius: 1%;
   text-align: center;
 }
-.container {
-  width: 500px;
-  margin: 0 auto;
-  background-color: rgba (255, 255, 255, 0.9);
-  /*0.95 = opacity*/
-  padding: 25px;
-  border-radius: 1%;
-  background-color: #f5f3f1;
-}
+
 body {
-  font-family: "Raleway", sans-serif; 
-  background-color: #236747; /*change to Raleway, colors #236747 and coral*/
+  font-family: 'Raleway', sans-serif;
+  background-color: #236747;
+  /*change to Raleway, colors #236747 and coral*/
   margin: 0px;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 28px;
+  text-align: center;
 }
 
-h2{
-    font-size: 16px;
-}
 p {
+  font-size: 10px;
+  text-align: center;
+  font-style: ;
+}
+
+.firstName,
+.lastName,
+.email,
+.password,
+.confirmPassword {
   text-align: left;
+  padding: 2px 0px;
+}
+
+label {
   font-size: 8px;
+  text-align: left;
+}
+
+input {
+  text-align: left;
+}
 
 body a {
   text-decoration: none;
 }
+
+button {
+  background-color: coral;
+  color: #ffffff;
+  padding: 6px 50px;
+  border: 1px solid coral;
+  border-radius: 7%;
+  font-size: 9px;
+}
+button:hover {
+  background-color: chocolate;
+}
+
+.disclaimer {
+  font-size: 9px;
+}
+
+.disclaimer a {
+  color: coral;
+}
 footer {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+footer a {
+  color: coral;
 }
