@@ -51,55 +51,67 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      /if floating does not work!*/
+      <!--if floating does not work!-->
     </main>
     <footer>
-      <form>
-        <h2>Contact us</h2>
-        <div class="form-group">
-          <div class="firstName">
-            <label for="firstName">First name</label><br />
-            <input type="text" />
+      <div class="container">
+        <form>
+          <h2>Contact us</h2>
+          <div class="form-group">
+            <div class="firstName">
+              <label for="firstName">First name</label>
+              <input type="text" />
+            </div>
+            <div class="lastName">
+              <label for="lastName">Last name</label>
+              <input type="text" />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" />
+            </div>
           </div>
-          <div class="lastName">
-            <label for="lastName">Last name</label><br />
-            <input type="text" />
+          <h2>Do you want to join with our newsletter?</h2>
+          <div class="form-group">
+            <div>
+              <input type="radio" />
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" />
+              <label for="no">No</label>
+            </div>
           </div>
-          <div class="email">
-            <label for="email">Email</label><br />
-            <input type="email" />
+          <h2>How did you find us?</h2>
+          <div class="form-group">
+            <div>
+              <input type="checkbox" />
+              <label for="1">friend told me</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="2">found in the Internet</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="3">saw in social media</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="4">other</label>
+            </div>
+            <div>
+              <textarea
+                id="text"
+                name="freeTextArea"
+                rows="1"
+                cols="20"
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <h3>Do you want to join with our newsletter?</h3>
-        <div class="form-group"></div>
-        <h2>How did you find us?</h2>
-        <div class="form-group"></div>
-      </form>
-      <div>
-        <h3></h3>
-      </div>
-      <div id="contact">
-        <div class="container">
-          <form>
-            <h3>Contact us</h3>
-            <tr>
-              <td><input type="text" />First name</td>
-              <td><input type="text" />Last name</td>
-              <td><input type="text" />Email</td>
-            </tr>
-            <h3>Do you want to join with our newsletter?</h3>
-            <tr>
-              <td><input type="radio" />Yes</td>
-              <td><input type="radio" />No</td>
-            </tr>
-            <h3>How did you find us?</h3>
-            <tr>
-              <td><input type="checkbox" />friend told me</td>
-              <td><input type="checkbox" />found in the Internet</td>
-              <td><input type="checkbox" />saw in social media</td>
-              <td><input type="checkbox" />other</td>
-            </tr>
-          </form>
+        </form>
+        <div class="footerText">
+          <h2>Lorem ipsum dolor sit amet.</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             doloribus commodi blanditiis omnis maiores ducimus alias

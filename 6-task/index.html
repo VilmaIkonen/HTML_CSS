@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6_task</title>
+    <title>6_task_subscription form</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
@@ -11,52 +11,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Sign Up</h1>
-      <br />
-      <p>It's free and it only takes a minute</p>
+    <main>
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>It's free and it only takes a minute</p>
 
-      <form>
-        <div class="firstName">
-          <label for="firstName">First name</label><br />
-          <input type="text" />
-        </div>
-        <div class="lastName">
-          <label for="lastName">Last name</label><br />
-          <input type="text" />
-        </div>
-        <div class="email">
-          <label for="email">Email</label><br />
-          <input type="email" />
-        </div>
-        <div class="password">
-          <label for="password">Password</label><br />
-          <input type="password" />
-        </div>
-        <div class="confirmPassword">
-          <label for="confirmPassword">Confirm password</label><br />
-          <input type="password" />
-        </div>
-      </form>
-      <br />
-      <form><button type="submit">SIGN UP</button></form>
-      <br />
-      <!make this hover, color chocolate-->
+        <form>
+          <div class="formGroup">
+            <label for="firstName">First name</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+          <div class="formGroup">
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+          <div class="formGroup">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="formGroup">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="formGroup">
+            <label for="ConfirmPassword">Confirm password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+            />
+          </div>
+          <button type="submit">Sign up</button>
+          <!--style as capital letters in CSS-->
+        </form>
 
-      <div class="disclaimer">
-        By clicking the Sign Up button, you agree to our<a
-          href="Terms&Conditions"
-        >
-          Terms & Conditions</a
-        >
-        and<a href="PrivacyPolicy"> Privacy Policy</a>
+        <p>
+          By clicking the Sign Up button, you agree to our<a href="#">
+            Terms & Conditions</a
+          >
+          and<a href="#"> Privacy Policy</a>
+        </p>
       </div>
-    </div>
+    </main>
+    <footer>
+      <p>Already have an account? <a href="#">Login Here</a></p>
+    </footer>
   </body>
-
-  <footer>
-    <div class="footer">
-      Already have an account? <a href="LoginHere">Login Here</a>
-    </div>
-  </footer>
 </html>
