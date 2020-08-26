@@ -5,18 +5,16 @@
 }
 
 .container {
-  width: 230px;
-  height: 420px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 25px;
-  margin: 50px 100px 10px 100px;
-  border-radius: 1%;
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 5px;
   text-align: center;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #236747;
   /*change to Raleway, colors #236747 and coral*/
   margin: 0px;

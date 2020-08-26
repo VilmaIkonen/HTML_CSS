@@ -1,0 +1,70 @@
+/*global prperties go up, effect whole page*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 20%;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+.container {
+  margin: 50px;
+}
+
+a:hover {
+  background-color: teal;
+}
+
+main #hero {
+  display: flex;
+  background: url("https://source.unsplash.com/3rfH2GOflo8/1200x800") no-repeat
+    fixed center center / cover;
+}
+
+main #heroContent {
+  width: 400px;
+  height: 220px;
+  margin: 250px auto;
+  padding: 10px;
+  float: left;
+  border-radius: 5px;
+  text-align: left;
+  background-color: tomato;
+  color: white;
+}
+main #aboutUs {
+  height: 500px;
+}
+main #aboutUsContent {
+  width: 500px;
+  height: 200px;
+}
+
+main #aboutUs img {
+  width: 500px;
+  float: right;
+}
+
+footer {
+  background-color: black;
+  text-align: left;
+}
+
+footer h3 {
+  color: white;
+}
