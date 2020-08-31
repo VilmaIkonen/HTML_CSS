@@ -4,79 +4,81 @@
   box-sizing: border-box;
 }
 
-.container {
-  background-color: white;
-  width: 300px;
-  padding: 20px;
-  margin: 50px auto;
-  border-radius: 5px;
-  text-align: center;
-}
+/*global*/
 
 body {
   font-family: "Raleway", sans-serif;
   background-color: #236747;
-  /*change to Raleway, colors #236747 and coral*/
-  margin: 0px;
 }
 
-h1 {
-  font-size: 28px;
-  text-align: center;
-}
-
-p {
-  font-size: 10px;
-  text-align: center;
-  font-style: ;
-}
-
-.firstName,
-.lastName,
-.email,
-.password,
-.confirmPassword {
-  text-align: left;
-  padding: 2px 0px;
-}
-
-label {
-  font-size: 8px;
-  text-align: left;
-}
-
-input {
-  text-align: left;
-}
-
-body a {
+a {
+  color: coral;
   text-decoration: none;
 }
 
-button {
-  background-color: coral;
-  color: #ffffff;
-  padding: 6px 50px;
-  border: 1px solid coral;
-  border-radius: 7%;
-  font-size: 9px;
+a:hover {
+  color: chocolate;
+  text-decoration: underline;
 }
-button:hover {
+
+input, textarea, button {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  background: white;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*margi-bottom class for elements where I want to use it*/
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/*main area with the form*/
+
+main .container .form-group label {
+  display: block;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+main .container .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+main .container form button {
+  width: 80%;
+  background-color: coral;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+main .container form button:hover {
   background-color: chocolate;
 }
 
-.disclaimer {
-  font-size: 9px;
-}
-
-.disclaimer a {
-  color: coral;
-}
-footer {
-  text-align: center;
-  color: #ffffff;
+main .container .bottom-text {
   font-size: 12px;
 }
-footer a {
-  color: coral;
+
+/*footer area*/
+
+footer {
+  text-align: center;
+  margin: -30px 0 50px 0;
+  color: white;
 }
