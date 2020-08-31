@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: teal;
+  font-family: "Playfair Display", serif, "Source Sans Pro", sans-serif;
+  margin: 0px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex; /*only need this and next line for headers flexing*/
+  justify-content: space-between;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 1rem;
+  display: block;
+  background-color: tomato;
+}
+
+main {
+  display: flex;
+}
+.left {
+  background-color: darkmagenta;
+  flex: 1; /* how big part it takes from the flex when compared to other child, here .right. Both take 50%, 1:1*/
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; /*puts boxes in reverse orientation, box3 first*/
+  align-items: center; /* play with align-items and justify-content. Works differently if it is column or row!*/
+}
+.right {
+  background-color: wheat;
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /*boxes evenly spaced on page. Can use also others, test*/
+}
+
+.Box {
+  background-color: white;
+  border-radius: 5px;
+  width: 150px; /*these could also be made with relative units, rem, to make boxes more responsive*/
+  height: 150px;
+  padding: 1rem;
+  margin: 1rem;
+}

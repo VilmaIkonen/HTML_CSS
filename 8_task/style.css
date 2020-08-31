@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: teal;
+}
+
+h1 {
+  color: tomato;
+}
+
+/* for small devices*/
+@media (max-width: 576px) {
+  body {
+    background-color: green;
+  }
+  h1 {
+    color: blue;
+  }
+  h1::after {
+    content: "Mobile screens up to 576px";
+  }
+}
+
+/* for tablet*/
+@media (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+  h1 {
+    color: lightseagreen;
+  }
+  h1::after {
+    content: "Tablets up to 768px";
+  }
+}
+
+/* for large devices (laptops */
+@media (min-width: 992px) {
+  body {
+    background-color: black;
+  }
+  h1 {
+    color: white;
+  }
+  h1::after {
+    content: "Large devices up to 992px";
+  }
+}
+
+/* for extra large devices*/
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(134, 98, 98);
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+  h1::after {
+    content: "Extra large devices 1200px and up";
+  }
+}
