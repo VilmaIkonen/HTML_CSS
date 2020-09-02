@@ -1,22 +1,45 @@
-/*global prperties go up, effect whole page*/
-
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  width: 100%
+  font-family: "Lato", sans-serif;
+  background-color: #f4f4f4;
 }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  padding: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* Header */
 
 header {
   text-align: center;
 }
 
-header img {
-  width: 20%;
+header .logo img {
+  width: 200px;
+}
+
+header nav ul {
+  list-style-type: none;
 }
 
 header nav ul li {
@@ -24,91 +47,132 @@ header nav ul li {
 }
 
 header nav ul li a {
+  color: #333;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+  border-bottom: 4px solid transparent; /*transparent line gives space between divs, header and main, prevents "jumping of the line on "hover"*/
 }
 
-.container {
-  margin: 50px;
+header nav ul li a:hover {
+  color: #fe6000;
+  font-weight: bold;
+  border-bottom: 4px solid #fe6000;
 }
 
-a:hover {
-  background-color: teal;
+/* Hero-banner */
+#hero-banner {
+  background: url(https://source.unsplash.com/featured/?sky) no-repeat center
+    center/cover;
+  height: 75vh;
 }
 
-main #hero-banner {
-  display: flex;
-  background: url("https://source.unsplash.com/3rfH2GOflo8/1200x800") no-repeat fixed center center / cover;
-  height: 100%;
+#hero-banner .container {
+  padding-top: 100px;
 }
 
-main #hero-banner .content {
-  width: 400px;
-  height: 200px;
-  background-color: tomato;
+#hero-banner .content {
+  background-color: rgba(255, 132, 0, 0.8);
+  padding: 20px;
   color: white;
-  padding: 25px;
-  text-align: left;
+  border-radius: 5px;
+  width: 500px;
 }
 
-main #hero-banner a {
+#hero-banner .content h2 {
+  font-size: 32px;
+}
+
+#hero-banner .content a {
+  color: white;
   text-decoration: none;
-  border: 1px solid black;
-  background-color: red;
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
-}
-
-main #hero-banner a:hover {
-  background-color: chocolate;
-}
-
-main #aboutUs {
-  height: 100%;
+  text-transform: uppercase;
+  background-color: #333;
+  padding: 12px 24px;
+  border-radius: 2px;
+  margin-top: 24px;
   display: inline-block;
 }
 
-main .texts {
-  width: 50%;
-  float: left;
+/*About us*/
+
+#about {
+  background-color: white;
+  height: 65vh;
 }
 
-main #aboutUs img {
-  width: 50%;
-  float: right;
+#about .texts {
+  float: left;
+  width: 40%;
 }
+
+#about img {
+  float: right;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.clearfix {
+  clear: both; /*prevents floating of two parts to continue until end of page, eg img can float partly to footer side*/
+}
+
+/*footer*/
 
 footer {
-  background-color: black;
+  background-color: #333;
   color: white;
-  display: inline-block;
+  height: 120vh; /*when floating stuff, height is needed!, w/o this, backg color will disapear*/
 }
 
 footer form {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
-footer h2 {
-  margin: 15px 0px;
-  font-size: 25px;
+footer .right {
+  float: right;
+  width: 40%;
 }
 
-footer form .form-group label input {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 15px;
-}
+/* form area*/
 
 footer form label {
-  text-align: left;
+  width: 120px;
+  display: inline-block;
 }
 
-footer form .firstName .lastName .email {
-  float: right
+footer form .form-group {
+  margin: 16px 0;
 }
 
-footer .footerText {
-  float: right;
-  width: 50%;
+footer form h3 {
+  border-top: 1px dotted grey;
+  padding: 18px;
+  margin-top: 24px;
+}
+footer form input {
+  width: 57%;
+}
+footer form input[type="radio"],
+footer form input[type="checkbox"] {
+  margin: 0 20px;
+  width: auto;
+}
+
+footer form textarea {
+  margin-left: 20px;
+  display: block;
+  width: 90%;
+}
+
+footer form button {
+  padding: 12px 24px;
+  color: white;
+  background-color: orange;
+  border: none;
+  margin: 24px 24px 24px 20px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
