@@ -5,23 +5,23 @@
 }
 
 body {
-  color: black;
-  font-family: "Playfair Display", serif, "Source Sans Pro", sans-serif;
-  margin: 0px;
+  font-family: 'Playfair Display', serif, 'Source Sans Pro', sans-serif;
 }
 
+/*Header part*/
 header {
   background-color: teal;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2; /*is higher than everything else, main is z-index-1*/
-  height: 50px;
+  z-index: 2; /*is higher than everything else, main is z-index: 1*/
+  height: 10vh;
   top: 0;
   width: 100%;
 }
 
+/*Header*/
 header nav ul li {
   display: inline-block;
   padding: 0.5rem;
@@ -47,13 +47,13 @@ header nav ul li a i {
   color: pink;
 }
 main {
-  margin-top: 50px; /* makes this same size as in header height*/
+  margin-top: 10vh; /* make this same size as in header height*/
 }
 
 main #hero-banner {
   position: relative;
   height: 90vh;
-  background: url("https://source.unsplash.com/CmvA0xCDfC8/1200x800") no-repeat
+  background: url('https://source.unsplash.com/CmvA0xCDfC8/1200x800') no-repeat
     center center / cover;
   display: flex;
   justify-content: center;
@@ -63,17 +63,17 @@ main #hero-banner {
 }
 
 main #hero-banner::after {
-  position: absolute;
-  content: ""; /*always have to have content if you want to add something with ::after*/
-  height: 100%;
+  position: absolute; /*'on-top-element' will be position: absolute, underlying position:relative*/
+  content: ''; /*always have to have content if you want to add something with ::after*/
+  height: 100%; /*in relation to undelying?*/
   width: 100%;
   background-color: white;
   top: 0;
   left: 0;
-  opacity: 0.5; /*or can use background color with alfachannel (rgb.....)*/
-  display: flex;
+  opacity: 0.7; /*or can use background color with alfachannel (rgb.....)*/
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/ /* are these needed?*/
 }
 
 main section .container {
@@ -101,7 +101,7 @@ p:nth-child(2) {
   color: green;
 }*/
 section .text-content {
-  position: relative;
+  position: relative; /* is this needed?*/
 }
 
 section.text-content p:nth-child(even) {
