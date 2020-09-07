@@ -13,13 +13,29 @@ header {
     padding: 1rem;
     display: flex; /*only need this and next line for headers flexing*/
     justify-content: space-between;
-    justify-content: ;
+  
 }
 
 header #upperLeftCorner{
     background-color: yellow;
+    flex:1;
+    
 }
 
 header nav{
     background-color: pink;
+    flex:1;   
+}
+
+header nav ul li{
+  list-style-type: none;
+  display: inline-block
+}
+
+main section{
+  flex:3;
+}
+
+main .leftSideBar{
+  flex:1;
 }

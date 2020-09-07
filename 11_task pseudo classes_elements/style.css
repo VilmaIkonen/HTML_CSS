@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Playfair Display", serif, "Source Sans Pro", sans-serif;
+  margin: 0px;
+}
+
+header {
+  background-color: teal;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; /*is higher than everything else, main is z-index-1*/
+  height: 50px;
+  top: 0;
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+
+header nav ul li a:visited {
+  color: green;
+}
+header nav ul li a i {
+  /*if you want to cahnge icon size, do it in html e.g. fa-3x*/
+  color: pink;
+}
+main {
+  margin-top: 50px; /* makes this same size as in header height*/
+}
+
+main #hero-banner {
+  position: relative;
+  height: 90vh;
+  background: url("https://source.unsplash.com/CmvA0xCDfC8/1200x800") no-repeat
+    center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2rem;
+}
+
+main #hero-banner::after {
+  position: absolute;
+  content: ""; /*always have to have content if you want to add something with ::after*/
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 0.5; /*or can use background color with alfachannel (rgb.....)*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*p:first-child {
+  color: black;
+  background-color: salmon;
+}
+
+p:last-child {
+  color: tomato;
+}
+
+p:nth-child(2) {
+  color: green;
+}*/
+section .text-content {
+  position: relative;
+}
+
+section.text-content p:nth-child(even) {
+  background-color: salmon;
+  color: black;
+}
+
+section.text-content p:nth-child(odd) {
+  color: silver;
+  background-color: salmon;
+}
+
+section.text-content p:nth-child(2) {
+  color: green;
+  background-color: pink;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+section.text-content p:nth-child(3) {
+  color: green;
+  background-color: yellow;
+  font-size: 1.5rem;
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+section.text-content p:nth-child(5) {
+  color: black;
+  background-color: green;
+  position: sticky;
+  top: 100px;
+}
+
+/*p:nth-child(2n + 6) {
+  color: silver;
+  every second have this styling sarting from 6th
+} */
+/*footer {
+  position: fixed;
+  bottom: 0;
+} footer can also be fixed*/
