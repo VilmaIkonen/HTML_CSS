@@ -3,42 +3,58 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body {
-  background-color: teal;
-  color: black
-  font-family: 'Playfair Display', serif, 'Source Sans Pro', sans-serif;
-  margin: 0px;
+body header footer {
+  color: black;
+  font-family: 'Playfair Display', serif;
 }
+#siteTitle,
+nav,
+#postTitle,
+#postMeta,
+#mainContent,
+#mainContentImage,
+#sideBar,
+#ads,
+#otherStuff,
+Footer {
+  margin: 0 0 2px 2px;
+}
+
+/* Header = Site Title & Nav*/
 header {
-    padding: 1rem;
-    display: flex; /*only need this and next line for headers flexing*/
-    justify-content: space-between;
-  margin: 1px;
+  display: flex; /*only need this and next line for headers flexing*/
+  justify-content: space-between;
 }
 
 header #siteTitle {
   background-color: yellow;
   flex: 1;
+  height: 40px;
+  width: 300px;
 }
 
 header nav {
   background-color: pink;
   flex: 1;
+  height: 40px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav ul li {
   list-style-type: none;
   display: inline-block;
+  text-align: left;
+  width: 100px;
 }
 
-/*Main section, all execpt header and footer*/
+/*Main section, all except header and footer*/
 main {
   display: flex;
   justify-content: space-between;
-}
-
-div {
-  margin: 1px;
 }
 
 #leftMain {
@@ -53,29 +69,48 @@ div {
   display: flex;
   justify-content: space-between;
 }
-  
+
+#postMeta {
+  background-color: lightgreen;
+  flex: 1;
+  height: 202px;
 }
 
-header #upperLeftCorner{
-    background-color: yellow;
-    flex:1;
-    
+#contentImg {
+  flex: 3;
 }
 
-header nav{
-    background-color: pink;
-    flex:1;   
+#mainContent {
+  background-color: lightgrey;
+  height: 80px;
 }
 
-header nav ul li{
-  list-style-type: none;
-  display: inline-block
+#mainContentImage {
+  background-color: yellow;
+  height: 120px;
 }
 
-main section{
-  flex:3;
+#postTitle {
+  background-color: grey;
+  height: 40px;
 }
 
-main .leftSideBar{
-  flex:1;
+#sideBar {
+  background-color: orange;
+  height: 80px;
+}
+
+#ads {
+  background-color: green;
+  height: 80px;
+}
+
+#otherStuff {
+  background-color: purple;
+  height: 80px;
+}
+
+footer {
+  background-color: rgb(124, 5, 5);
+  height: 40px;
 }
