@@ -9,19 +9,22 @@ body {
 }
 
 /*Header part*/
+
 header {
   background-color: teal;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2; /*is higher than everything else, main is z-index: 1*/
+  z-index: 2;
+  /*is higher than everything else, main is z-index: 1*/
   height: 10vh;
   top: 0;
   width: 100%;
 }
 
 /*Header*/
+
 header nav ul li {
   display: inline-block;
   padding: 0.5rem;
@@ -42,19 +45,21 @@ header nav ul li a:hover {
 header nav ul li a:visited {
   color: green;
 }
+
 header nav ul li a i {
-  /*if you want to cahnge icon size, do it in html e.g. fa-3x*/
+  /*if you want to change icon size, do it in html e.g. fa-3x*/
   color: pink;
 }
+
 main {
-  margin-top: 10vh; /* make this same size as in header height*/
+  margin-top: 10vh;
+  /* make this same size as in header height*/
 }
 
 main #hero-banner {
   position: relative;
   height: 90vh;
-  background: url('https://source.unsplash.com/CmvA0xCDfC8/1200x800') no-repeat
-    center center / cover;
+  background: url('https://source.unsplash.com/CmvA0xCDfC8/1200x800') no-repeat center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,17 +68,22 @@ main #hero-banner {
 }
 
 main #hero-banner::after {
-  position: absolute; /*'on-top-element' will be position: absolute, underlying position:relative*/
-  content: ''; /*always have to have content if you want to add something with ::after*/
-  height: 100%; /*in relation to undelying?*/
+  position: absolute;
+  /*'on-top-element' will be position: absolute, underlying position:relative*/
+  content: '';
+  /*always have to have content if you want to add something with ::after*/
+  height: 100%;
+  /*in relation to undelying?*/
   width: 100%;
   background-color: white;
   top: 0;
   left: 0;
-  opacity: 0.7; /*or can use background color with alfachannel (rgb.....)*/
+  opacity: 0.7;
+  /*or can use background color with alfachannel (rgb.....)*/
   /*display: flex;
   justify-content: space-between;
-  align-items: center;*/ /* are these needed?*/
+  align-items: center;*/
+  /* are these needed?*/
 }
 
 main section .container {
@@ -100,8 +110,10 @@ p:last-child {
 p:nth-child(2) {
   color: green;
 }*/
+
 section .text-content {
-  position: relative; /* is this needed?*/
+  position: relative;
+  /* is this needed?*/
 }
 
 section.text-content p:nth-child(even) {
@@ -131,6 +143,7 @@ section.text-content p:nth-child(3) {
   top: 0;
   left: 0;
 }
+
 section.text-content p:nth-child(5) {
   color: black;
   background-color: green;
@@ -142,6 +155,7 @@ section.text-content p:nth-child(5) {
   color: silver;
   every second have this styling sarting from 6th
 } */
+
 /*footer {
   position: fixed;
   bottom: 0;
