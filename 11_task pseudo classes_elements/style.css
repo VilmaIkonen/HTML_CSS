@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Playfair Display', serif, 'Source Sans Pro', sans-serif;
+  font-family: "Playfair Display", serif, "Source Sans Pro", sans-serif;
 }
 
 /*Header part*/
@@ -23,7 +23,7 @@ header {
   width: 100%;
 }
 
-/*Header*/
+/*Nav*/
 
 header nav ul li {
   display: inline-block;
@@ -59,7 +59,8 @@ main {
 main #hero-banner {
   position: relative;
   height: 90vh;
-  background: url('https://source.unsplash.com/CmvA0xCDfC8/1200x800') no-repeat center center / cover;
+  background: url("https://source.unsplash.com/CmvA0xCDfC8/1200x800") no-repeat
+    center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +71,7 @@ main #hero-banner {
 main #hero-banner::after {
   position: absolute;
   /*'on-top-element' will be position: absolute, underlying position:relative*/
-  content: '';
+  content: "";
   /*always have to have content if you want to add something with ::after*/
   height: 100%;
   /*in relation to undelying?*/
