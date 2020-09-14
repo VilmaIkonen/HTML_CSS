@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header #siteTitle {
+  background-color: yellow;
+}
+
+header nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: pink;
+  list-style-type: none;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+main section #postTitle {
+  background-color: lightblue;
+}
+
+main section #postMeta {
+  background-color: lightgreen;
+}
+
+main section #content {
+  background-color: lightgrey;
+}
+
+main section #contentImg {
+  background-color: yellowgreen;
+}
+
+main section #titleMetaContentImg {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+main section #metaContentImg {
+  display: grid;
+  grid-template: 100% /40% 60%;
+}
+
+main section #contentImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main section #sidebar {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+}
+
+main section #side {
+  display: grid;
+  grid-template-rows: repeat (3, 1fr);
+}
+main section #sideBar {
+  background-color: orange;
+}
+
+main section #ads {
+  background-color: green;
+}
+
+main section #otherStuffs {
+  background-color: violet;
+}
