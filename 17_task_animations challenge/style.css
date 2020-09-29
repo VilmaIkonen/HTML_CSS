@@ -3,3 +3,142 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(45deg, #72574f, #a58976, #572a1c, #4e4423);
+  background-size: 500% 500%;
+  animation: gradient 20s ease infinite;
+  font-family: "Karla", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1,
+h2,
+p,
+div {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.first-task {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(34, 145, 145);
+  transition: all 2s;
+}
+
+.first-task:hover {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(11, 48, 48);
+}
+
+.second-task {
+  height: 100px;
+  width: 200px;
+  border-radius: 5%;
+  background-color: rgb(34, 145, 112);
+  transition: all 2s;
+}
+
+.second-task:hover {
+  transform: rotateZ(180deg);
+  background-color: rgb(13, 54, 42);
+}
+
+.third-task {
+  height: 100px;
+  width: 200px;
+  border-radius: 5%;
+  background-color: rgb(34, 145, 52);
+  transition: all 2s;
+}
+
+.third-task p {
+  visibility: hidden;
+}
+
+.third-task:hover,
+.third-task p:hover {
+  height: 100px;
+  width: 100px;
+  visibility: visible;
+}
+
+.fifth-task {
+  height: 150px;
+  width: 150px;
+  border-radius: 5%;
+  background-color: rgb(84, 145, 34);
+  border: 10px solid transparent;
+  z-index: 0;
+  position: relative;
+  transition: 3s;
+}
+
+.fifth-task:hover {
+  border: 10px solid rgb(31, 54, 12);
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.animated-circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s 0s;
+  animation-name: animatedCircle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-color: rgb(121, 145, 34);
+  position: relative;
+}
+
+@keyframes animatedCircle {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+    border-radius: 5%;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    border-radius: 25%;
+    background-color: rgb(55, 66, 15);
+  }
+  75% {
+    top: 200px;
+    left: 0px;
+    border-radius: 35%;
+    background-color: rgb(72, 80, 45);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+}
+
+.animated-circle:hover {
+  animation-play-state: paused;
+}
