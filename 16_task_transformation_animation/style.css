@@ -109,27 +109,32 @@ body {
 }
 
 .menuItem h1::before {
-  content: "";
-  /* height: 4px;  with this there will be line also on top*/
-  width: 100%;
-  display: inherit;
-  background-color: lightcoral;
-  transition: all 0.5s;
+  /*::before-->  before h1 element, ie. as "on top"*/
 }
+
 .menuItem h1::after {
   content: "";
   /* height: 4px; with this, bottom line will be visible at start*/
   width: 0;
   display: inherit;
   background-color: lightcoral;
-  transition: all 1s;
+  transition: all 1s ease-in;
 }
 
 .menuItem:hover h1::after {
+  /*::after --> after h1 element, ie. as "underline"*/
   content: "";
   height: 4px;
   width: 100%;
   display: inherit;
   background-color: lightcoral;
-  transition: all 1s;
+}
+
+.menuItem:hover h1::after {
+  /*::after --> after h1 element, ie. as "underline"*/
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: inherit;
+  background-color: lightcoral;
 }
