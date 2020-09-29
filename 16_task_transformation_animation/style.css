@@ -103,3 +103,33 @@ body {
     left: 0;
   }
 }
+
+.menuItem h1 {
+  display: inline-block;
+}
+
+.menuItem h1::before {
+  content: "";
+  /* height: 4px;  with this there will be line also on top*/
+  width: 100%;
+  display: inherit;
+  background-color: lightcoral;
+  transition: all 0.5s;
+}
+.menuItem h1::after {
+  content: "";
+  /* height: 4px; with this, bottom line will be visible at start*/
+  width: 0;
+  display: inherit;
+  background-color: lightcoral;
+  transition: all 1s;
+}
+
+.menuItem:hover h1::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: inherit;
+  background-color: lightcoral;
+  transition: all 1s;
+}
