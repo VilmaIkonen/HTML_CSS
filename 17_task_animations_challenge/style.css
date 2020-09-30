@@ -5,21 +5,26 @@
 }
 
 body {
-  background: linear-gradient(45deg, #72574f, #a58976, #572a1c, #4e4423);
-  background-size: 500% 500%;
+  /* background: linear-gradient(45deg, #72574f, #a58976, #572a1c, #4e4423); */
+  background: url("https://source.unsplash.com/0RpP5OHaojY/1600x900");
+  background-size: 200%; /* background much bigger and it is moving --> linear-gradient animation */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   animation: gradient 20s ease infinite;
   font-family: "Karla", sans-serif;
 }
 
 @keyframes gradient {
+  /* changing these will change the width of movement of the background image or gradient. If 10% --> 100% movement is much wider*/
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 10%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 10% 10%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 10%;
   }
 }
 
@@ -29,11 +34,12 @@ p,
 div {
   text-align: center;
   margin: 50px auto;
+  color: #fff;
 }
 
 .first-task {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   background-color: rgb(34, 145, 145);
   transition: all 2s;
@@ -58,43 +64,115 @@ div {
   background-color: rgb(13, 54, 42);
 }
 
+/* ----------------- 3rd task ---------------------*/
+
 .third-task {
   height: 100px;
   width: 200px;
   border-radius: 5%;
+  padding: 1rem;
   background-color: rgb(34, 145, 52);
   transition: all 2s;
 }
 
-.third-task p {
-  visibility: hidden;
-}
-
-.third-task:hover,
-.third-task p:hover {
+.third-task:hover {
   height: 100px;
   width: 100px;
-  visibility: visible;
 }
 
+.third-task p {
+  color: #333;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.third-task:hover p {
+  opacity: 1;
+}
+
+/* ----------------- 5th task ---------------------*/
 .fifth-task {
-  height: 150px;
-  width: 150px;
-  border-radius: 5%;
-  background-color: rgb(84, 145, 34);
-  border: 10px solid transparent;
-  z-index: 0;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  transition: 3s;
 }
 
-.fifth-task:hover {
-  border: 10px solid rgb(31, 54, 12);
-  position: absolute;
-  z-index: -1;
+/* with one div you can do one ::before, one ::after, ie. eg top and bottom borders. One element can have only one ::Before and one ::after! 
+Here h3 inside div can be used to make two other box borders, one ::after, one ::before*/
+
+/*  TOP side  */
+.fifth-task::before {
   content: "";
+  /* content has to always be there for pseudo-elements! Otherwise it does not exist as it is not in HTML*/
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  border-top: 5px solid rgb(16, 143, 84);
+  transition: all 1s;
 }
 
+.fifth-task:hover::before {
+  left: 0;
+}
+
+/*  RIGHT side  */
+.fifth-task::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-right: 5px solid rgb(17, 131, 121);
+  transition: all 1s;
+}
+
+.fifth-task:hover::after {
+  top: 0;
+}
+
+/*  BOTTOM side  */
+.fifth-task h3::before {
+  content: "";
+  display: block;
+  position: absolute; /* if position relative, border lines will be next to h3. This absolute finds the next "level up" a position relative. Here it is with div. fifth-class. If it is removed, next position relative is with section */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 200px;
+  border-bottom: 5px solid rgb(86, 165, 62);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::before {
+  right: 0;
+}
+
+/*  LEFT side  */
+.fifth-task h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  border-left: 5px solid rgb(12, 110, 56);
+  transition: all 1s;
+}
+
+.fifth-task:hover h3::after {
+  bottom: 0;
+}
+
+/* -------------------- 6th task ---------------------*/
 .animated-circle {
   height: 150px;
   width: 150px;

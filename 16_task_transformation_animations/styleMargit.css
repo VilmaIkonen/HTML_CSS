@@ -69,16 +69,16 @@ body {
 }
 
 /* @keyframes example {
-    from {
-      background: var(--light-color);
-    }
-    to {
-      background: var(--highlight-color);
-      height: 200px;
-      width: 200px;
-      box-shadow: 10px 10px 20px black;
-    }
-  } */
+  from {
+    background: var(--light-color);
+  }
+  to {
+    background: var(--highlight-color);
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px 20px black;
+  }
+} */
 
 @keyframes example {
   0% {
@@ -154,6 +154,7 @@ h1 {
 /********* LEFT SIDE - top to bottom *********/
 
 /* .advanced h1::before {
+<<<<<<< HEAD:16_task_transformation_animations/styleMargit.css
     content: "";
     display: block;
     position: absolute;
@@ -166,3 +167,17 @@ h1 {
   .advanced:hover h1::before {
     bottom: 0;
   } */
+=======
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  border-left: 3px solid var(--highlight-color);
+  transition: all 1s;
+}
+.advanced:hover h1::before {
+  bottom: 0;
+} */
+>>>>>>> 27ebf457abc54d1480a7866ea14e50165d765c65:16_task_transformation_animation/styleMargit.css
