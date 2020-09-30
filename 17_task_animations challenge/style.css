@@ -96,15 +96,15 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 200px;
   bottom: 0;
-  right: 200px;
+  right: 0;
   border-top: 3px solid rgb(16, 143, 84);
   transition: all 1s;
 }
 
 .fifth-task:hover::before {
-  right: 0;
+  left: 0;
 }
 
 /*  RIGHT side  */
@@ -131,14 +131,14 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 200px;
-  right: 0;
+  left: 0;
+  right: 200px;
   border-bottom: 3px solid rgb(86, 165, 62);
   transition: all 1s;
 }
 
 .fifth-task:hover h3::before {
-  left: 0;
+  right: 0;
 }
 
 /*  LEFT side  */
