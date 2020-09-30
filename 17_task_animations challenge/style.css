@@ -5,21 +5,26 @@
 }
 
 body {
-  background: linear-gradient(45deg, #72574f, #a58976, #572a1c, #4e4423);
-  background-size: 500% 500%;
+  /* background: linear-gradient(45deg, #72574f, #a58976, #572a1c, #4e4423); */
+  background: url("https://source.unsplash.com/0RpP5OHaojY/1600x900");
+  background-size: 200%; /* background much bigger and it is moving --> linear-gradient animation */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   animation: gradient 20s ease infinite;
   font-family: "Karla", sans-serif;
 }
 
 @keyframes gradient {
+  /* changing these will change the width of movement of the background image or gradient. If 10% --> 100% movement is much wider*/
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 10%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 10% 10%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 10%;
   }
 }
 
@@ -29,6 +34,7 @@ p,
 div {
   text-align: center;
   margin: 50px auto;
+  color: #fff;
 }
 
 .first-task {
@@ -99,7 +105,7 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   left: 200px;
   bottom: 0;
   right: 0;
-  border-top: 3px solid rgb(16, 143, 84);
+  border-top: 5px solid rgb(16, 143, 84);
   transition: all 1s;
 }
 
@@ -116,7 +122,7 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   bottom: 0;
   left: 0;
   right: 0;
-  border-right: 3px solid rgb(17, 131, 121);
+  border-right: 5px solid rgb(17, 131, 121);
   transition: all 1s;
 }
 
@@ -133,7 +139,7 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   bottom: 0;
   left: 0;
   right: 200px;
-  border-bottom: 3px solid rgb(86, 165, 62);
+  border-bottom: 5px solid rgb(86, 165, 62);
   transition: all 1s;
 }
 
@@ -150,7 +156,7 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
   bottom: 200px;
   left: 0;
   right: 0;
-  border-left: 3px solid rgb(12, 110, 56);
+  border-left: 5px solid rgb(12, 110, 56);
   transition: all 1s;
 }
 
