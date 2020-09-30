@@ -64,24 +64,32 @@ div {
   background-color: rgb(13, 54, 42);
 }
 
+/* ----------------- 3rd task ---------------------*/
+
 .third-task {
   height: 100px;
   width: 200px;
   border-radius: 5%;
+  padding: 1rem;
   background-color: rgb(34, 145, 52);
   transition: all 2s;
 }
 
-.third-task p {
-  visibility: hidden;
-}
-
-.third-task:hover,
-.third-task p:hover {
+.third-task:hover {
   height: 100px;
   width: 100px;
-  visibility: visible;
 }
+
+.third-task p {
+  color: #333;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.third-task:hover p {
+  opacity: 1;
+}
+
 /* ----------------- 5th task ---------------------*/
 .fifth-task {
   height: 200px;
