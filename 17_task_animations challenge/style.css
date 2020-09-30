@@ -128,7 +128,7 @@ Here h3 inside div can be used to make two other box borders, one ::after, one :
 .fifth-task h3::before {
   content: "";
   display: block;
-  position: absolute;
+  position: absolute; /* if position relative, border lines will be next to h3. This absolute finds the next "level up" a position relative. Here it is with div. fifth-class. If it is removed, next position relative is with section */
   top: 0;
   bottom: 0;
   left: 0;
