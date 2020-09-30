@@ -16,18 +16,18 @@
 
 @font-face {
   font-family: "finlandica";
-  src: url("assests/fonts/finlandica-regularWeb.woff2") format("woff2"),
-    url("assests/fonts/finlandica-regularWeb.woff") format("woff"),
-    url("assests/fonts/finlandica-regularWeb.ttf") format("truetype");
+  src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "finlandicaBold";
-  src: url("assests/fonts/finlandica-boldWeb.woff2") format("woff2"),
-    url("assests/fonts/finlandica-boldWeb.woff") format("woff"),
-    url("assests/fonts/finlandica-boldWeb.ttf") format("truetype");
+  src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
+    url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
+    url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
