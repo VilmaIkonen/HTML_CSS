@@ -13,332 +13,333 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header>
-      <div class="headerContainer">
-          <div id="headerTop">
-            <div id="logo">
-              <a href="#">Jobs in <strong>Finland</strong></a>
-            </div>
-            <div id="link">
-              <a href="#"
-                ><i class="material-icons">double_arrow</i> Work in Finland</a
-              >
-            </div>
+    <div class="container">
+      <header>
+        <div class="headerTop">
+          <div class="logo">
+            <a href="#">Jobs in <strong>Finland</strong></a>
           </div>
-          <div id="headerBottom">
-            <nav>
-              <!--START 
-                This is for mobile and tablet, "Hamburger menu" and "close"-->
-              <div id="openMenu" class="icon menu" class="hide" onclick="openMenu()">
-                  <i class="material-icons">menu</i>
-              </div>
-              <div id="closeMenu" class="icon close" class="hide"  onclick="closeMenu()">
-                <i class="material-icons"></i>
+          <div class="headerLink">
+            <a href="#"
+              ><i class="material-icons">double_arrow</i> Work in Finland</a
+            >
+          </div>
+        </div>
+        <div class="headerBottom">
+          <nav>
+            <!--START 
+              This is for mobile and tablet, "Hamburger menu" and "close"-->
+            <!-- <div id="openMenu" class="icon menu" onclick="openMenu()">
+                <a href="#"></a><i class="material-icons">menu</i>
             </div>
-               <!--END 
-                mobile and tablet, "Hamburger menu" and "close"-->
-              <ul>
-                <li><a href="#">Jobs home</a></li>
-                <li>
-                  <a href="#">Regions</a>
-                  <ul class="dropdown">
-                    <li><a href="#"></a>Lapland</li>
-                    <li><a href="#"></a>Capital region</li>
-                    <li><a href="#"></a>Soutwestern Finland</li>
-                    <li><a href="#"></a>Northern Savonia</li>
-                    <li><a href="#"></a>Pirkanmaa</li>
-                    <li><a href="#"></a>Ostrobothnia</li>
-                    <li><a href="#"></a>Satakunta</li>
-                    <li><a href="#"></a>Uusimaa</li>
-                  </ul>
-                </li>
-                <li><a href="#">Open positions</a></li>
-                <li><a href="#">Campaigns</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">For employers</a></li>
-              </ul>
-            </nav>
-            <div class="search">
-              <div class="btn" onclick="showHide()">
-                <i class="material-icons">search</i>
-              </div>
-              <div id="search-form" class="hide">
-                <form>
-                  <input type="text" placeholder="Search" />
-                  <button class="btn btn-primary" type="submit">
-                    <i class="material-icons">search</i>
-                  </button>
-                </form>
-              </div>
+            <div id="closeMenu" class="icon close"  onclick="closeMenu()">
+              <a href="#"></a<i class="material-icons"></i>
+            </div> -->
+            <!--END 
+              mobile and tablet, "Hamburger menu" and "close"-->
+            <ul id="menu">
+              <li class="mainMenu"><a href="#">Jobs home</a></li>
+              <li>
+                <a href="#">Regions</a>
+                <ul class="dropdownMenu">
+                  <li><a href="#">Lapland</a></li>
+                  <li><a href="#">Capital region</a></li>
+                  <li><a href="#">Soutwestern Finland</a></li>
+                  <li><a href="#">Northern Savonia</a></li>
+                  <li><a href="#">Pirkanmaa</a></li>
+                  <li><a href="#">Ostrobothnia</a></li>
+                  <li><a href="#">Satakunta</a></li>
+                  <li><a href="#">Uusimaa</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Open positions</a></li>
+              <li><a href="#">Campaigns</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">For employers</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div class="btn" onclick="showHide()">
+              <i class="material-icons">search</i>
+            </div>
+            <div id="search-form" class="hide">
+              <form>
+                <input type="text" placeholder="Search" />
+                <button class="btn btn-primary" type="submit">
+                  <i class="material-icons">search</i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
-    </header>
-    <main>
-      <div class="container">
-          <div id="heroBanner">
-            <div class="content">
-              <div class="heroBannerText">
-                <h1><strong>Jobs</strong> in Finland</h1>
-                <h3>
-                Welcome to explore open job opportunities in Finland. Here you
-                can find jobs targeted at English speaking professionals.
+      </header>
+      <main>
+        <div class="container">
+            <div id="heroBanner">
+              <div class="content">
+                <div class="heroBannerText">
+                  <h1><strong>Jobs</strong> in Finland</h1>
+                  <h3>
+                  Welcome to explore open job opportunities in Finland. Here you
+                  can find jobs targeted at English speaking professionals.
+                  </h3>
+                  <h3>
+                  You can search by region, job category or use keyword search.
                 </h3>
-                <h3>
-                You can search by region, job category or use keyword search.
-               </h3>
+                  </div>
                 </div>
               </div>
+        </div>
+        <div class="container">
+          <div class="templatePage">
+            <section id="categories">
+              <h2>Explore by category</h2>
+              <p>
+              Browse 38 open positions in your field of expertise. If you don't
+              find a suitable category, you can try a category close to your
+              expertise or use the keyword search.
+              </p>
+              <div class="flex">
+                <a
+              href="#"
+              class="item"
+              style=""
+              ><div>Other</div></a
+            >
+              <a
+                href="#"
+                class="item"
+                style="
+                background-image: url(https://source.unsplash.com/H4ClLKv3pqw/1600x900);
+              "
+                ><div>Robotics & AI</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/5fNmWej4tAA/1600x900);
+                "
+                ><div>Administration</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/RKeYaCTFblY/1600x900);
+                "
+                ><div>Academic</div></a
+              >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/WE-BiNwgwXc/1600x900);
+                "
+                ><div>Engineering</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/AYdJM-HiSUM/1600x900);
+                "
+                ><div>Hospitality</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/npxXWgQ33ZQ/1600x900);
+                "
+                ><div>ICT</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/wD1LRb9OeEo/1600x900);
+                "
+                ><div>Marketing & Sales</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/5aiRb5f464A/1600x900);
+                "
+                ><div>Project Management</div></a
+              >
+
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/8bGiIAxZO2M/1600x900);
+                "
+                ><div>Service</div></a
+              >
             </div>
-      </div>
-      <div class="container">
-        <div class="templatePage">
-          <section id="categories">
-            <h2>Explore by category</h2>
+            </section>
+          </div>
+        </div>
+        <div class="container">
+          <div class="templatePage">
+            <section id="regions">
+            
+            <h2>Explore by region</h2>
             <p>
-            Browse 38 open positions in your field of expertise. If you don't
-            find a suitable category, you can try a category close to your
-            expertise or use the keyword search.
+              Browse 38 open positions by geographic location and click the
+              regions' links to find you more about what the region can offer.
             </p>
+            <p>
+              Not familiar with Finnish geography? Don't worry, you can also browse
+              the jobs on the Finland map.
+            </p>
+            <button class="button" type="submit">
+              See regions on map
+            </button>
             <div class="flex">
               <a
-            href="#"
-            class="item"
-            style=""
-            ><div>Other</div></a
-          >
-            <a
-              href="#"
-              class="item"
-              style="
-              background-image: url(https://source.unsplash.com/H4ClLKv3pqw/1600x900);
-            "
-              ><div>Robotics & AI</div></a
-            >
+                href="#"
+                class="item"
+                style="
+                    background-image: url(https://source.unsplash.com/bpDJvls-h-0/1600x900);
+                "
+                ><div>Capital region</div></a
+              >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/a8g6OamcUsE/1600x900);
+                "
+                ><div>Lapland</div></a
+              >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/vvNkXsnuXuY/1600x900);
+                "
+                ><div>Central Ostrobothnia</div></a
+              >
 
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/5fNmWej4tAA/1600x900);
-              "
-              ><div>Administration</div></a
-            >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/idcVfrvYBxM/1600x900);
+                "
+                ><div>Soutwest Finland</div></a
+              >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/CcNCC0Zplwc/1600x900);
+                "
+                ><div>Northern Savonia</div></a
+              >
 
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/RKeYaCTFblY/1600x900);
-              "
-              ><div>Academic</div></a
-            >
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/WE-BiNwgwXc/1600x900);
-              "
-              ><div>Engineering</div></a
-            >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/GYTD37JoZO8/1600x900);
+                "
+                ><div>Pirkanmaa</div></a
+              >
 
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/AYdJM-HiSUM/1600x900);
-              "
-              ><div>Hospitality</div></a
-            >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/OPKq_jewtmo/1600x900);
+                "
+                ><div>Ostrobothnia</div></a
+              >
 
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/npxXWgQ33ZQ/1600x900);
-              "
-              ><div>ICT</div></a
-            >
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/FWyzwNiChsg/1600x900);
+                "
+                ><div>Satakunta</div></a
+              >
 
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/wD1LRb9OeEo/1600x900);
-              "
-              ><div>Marketing & Sales</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/5aiRb5f464A/1600x900);
-              "
-              ><div>Project Management</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/8bGiIAxZO2M/1600x900);
-              "
-              ><div>Service</div></a
-            >
-          </div>
-          </section>
-        </div>
-      </div>
-      <div class="container">
-        <div class="templatePage">
-          <section id="regions">
-          
-          <h2>Explore by region</h2>
-          <p>
-            Browse 38 open positions by geographic location and click the
-            regions' links to find you more about what the region can offer.
-          </p>
-          <p>
-            Not familiar with Finnish geography? Don't worry, you can also browse
-            the jobs on the Finland map.
-          </p>
-          <button class="button" type="submit">
-            See regions on map
-          </button>
-          <div class="flex">
-            <a
-              href="#"
-              class="item"
-              style="
-                  background-image: url(https://source.unsplash.com/bpDJvls-h-0/1600x900);
-              "
-              ><div>Capital region</div></a
-            >
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/a8g6OamcUsE/1600x900);
-              "
-              ><div>Lapland</div></a
-            >
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/vvNkXsnuXuY/1600x900);
-              "
-              ><div>Central Ostrobothnia</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/idcVfrvYBxM/1600x900);
-              "
-              ><div>Soutwest Finland</div></a
-            >
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/CcNCC0Zplwc/1600x900);
-              "
-              ><div>Northern Savonia</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/GYTD37JoZO8/1600x900);
-              "
-              ><div>Pirkanmaa</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/OPKq_jewtmo/1600x900);
-              "
-              ><div>Ostrobothnia</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/FWyzwNiChsg/1600x900);
-              "
-              ><div>Satakunta</div></a
-            >
-
-            <a
-              href="#"
-              class="item"
-              style="
-                background-image: url(https://source.unsplash.com/-KeK1o2kPM4/1600x900);
-              "
-              ><div>Uusimaa</div></a
-            >
-          </div>
-          </section>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div id="footerContainer">
-          <div class="footerColumn_1st_element">
-            <div class="texts">
-              <p>Jobs in <strong>Finland</strong></p>
+              <a
+                href="#"
+                class="item"
+                style="
+                  background-image: url(https://source.unsplash.com/-KeK1o2kPM4/1600x900);
+                "
+                ><div>Uusimaa</div></a
+              >
             </div>
+            </section>
           </div>
-          <div class="footerColumn">
-            <h3>Links</h3>
-            <div class="texts">
-              <p>
-                <a href="#"
-                  ><strong>Business Finland: Work in Finland</strong></a
-                ><br />
-                The why and how of starting your career in Finland.
-              </p>
-              <p>
-                <a href="#"><strong>Migri.fi</strong></a
-                ><br />Residence permits and other useful information from the
-                Finnish Immigration Service.
-              </p>
-              <p>
-                <a href="#"><strong>InfoFinland.fi</strong></a
-                ><br />Information on moving to Finland, living and working
-                here.
-              </p>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div id="footerContainer">
+            <div class="footerColumn_1st_element">
+              <div class="texts">
+                <p>Jobs in <strong>Finland</strong></p>
+              </div>
             </div>
-          </div>
+            <div class="footerColumn">
+              <h3>Links</h3>
+              <div class="texts">
+                <p>
+                  <a href="#"
+                    ><strong>Business Finland: Work in Finland</strong></a
+                  ><br />
+                  The why and how of starting your career in Finland.
+                </p>
+                <p>
+                  <a href="#"><strong>Migri.fi</strong></a
+                  ><br />Residence permits and other useful information from the
+                  Finnish Immigration Service.
+                </p>
+                <p>
+                  <a href="#"><strong>InfoFinland.fi</strong></a
+                  ><br />Information on moving to Finland, living and working
+                  here.
+                </p>
+              </div>
+            </div>
 
-          <div class="footerColumn"><div class="texts"></div>
+            <div class="footerColumn"><div class="texts"></div>
 
-          <div class="footerColumn">
-            <h3>&#65279</h3>
-            <div class="texts">
-              <p>
-                <a href="#">Contact for companies</a>
-              </p>
-              <p>
-                <a href="#">Terms of use</a>
-              </p>
+            <div class="footerColumn">
+              <h3>&#65279</h3>
+              <div class="texts">
+                <p>
+                  <a href="#">Contact for companies</a>
+                </p>
+                <p>
+                  <a href="#">Terms of use</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="backToTop" onclick="backToTop()">
-        <i class="material-icons">expand_less</i>
-      </div>
-    </footer>
-   
-    <script src="assets/script.js"></script>
+        <div id="backToTop" onclick="backToTop()">
+          <i class="material-icons">expand_less</i>
+        </div>
+      </footer>
+    
+      <script src="assets/script.js"></script>
+    </div>   
   </body>
+
 </html>

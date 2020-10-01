@@ -16,18 +16,18 @@
 
 @font-face {
   font-family: "finlandica";
-  src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
-    url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
-    url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
+  src: url("fonts/finlandica-regularWeb.woff2") format("woff2"),
+    url("fonts/finlandica-regularWeb.woff") format("woff"),
+    url("fonts/Finlandica-RegularWeb.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "finlandicaBold";
-  src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
-    url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
-    url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
+  src: url("fonts/finlandica-boldWeb.woff2") format("woff2"),
+    url("fonts/finlandica-boldWeb.woff") format("woff"),
+    url("fonts/Finlandica-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -35,6 +35,10 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 body {
@@ -103,7 +107,7 @@ header .headerContainer {
   grid-template-rows: 110px 50px;
 }
 
-header #headerTop {
+header .headerTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,27 +115,27 @@ header #headerTop {
   padding: 0 40px;
 }
 
-header #headerTop a {
+header .headerTop a {
   color: var(--dark-blue);
 }
 
-header #logo {
+header .logo {
   height: 110px;
   width: 130px;
   padding: 21px 0 0;
 }
 
-header #logo a {
+header .logo a {
   font-size: 2rem;
 }
 
-header #link a {
+header .headerLink a {
   text-transform: none;
 }
 
 /*Main navigation*/
 
-header #headerBottom {
+header .headerBottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +169,6 @@ nav ul li ul {
   display: none;
   padding-right: 20px;
   background-color: var(--white);
-
   transition: all 2s;
 }
 
@@ -179,6 +182,10 @@ nav ul li ul li {
   width: 100%;
   padding: 10px;
   text-align: left;
+}
+
+nav ul li ul li a {
+  color: var(--dark-blue);
 }
 
 /* ---------SEARCH ------- */
@@ -392,7 +399,7 @@ footer #backToTop i {
 
 /* ----------- Mobile ----------- */
 @media (max-width: 576px) {
-  header #link a {
+  header .headerLink a {
     display: none;
   }
 
